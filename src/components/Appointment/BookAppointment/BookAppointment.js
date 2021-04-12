@@ -43,7 +43,7 @@ const bookingData = [
 
 const BookAppointment = ({ date }) => {
     return (
-        <section style={{marginTop: '90px'}}>
+        <section style={{margin: '40px 0'}}>
             <h2 className="text-center brand-text-color">Available Appointments on {date.toDateString()}</h2>
             <div className="d-flex justify-content-center">
                 <div className="row w-75 mt-4 mb-5">

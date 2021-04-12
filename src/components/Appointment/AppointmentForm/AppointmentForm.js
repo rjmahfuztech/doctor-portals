@@ -19,8 +19,23 @@ Modal.setAppElement('#root')
 const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
-        console.log(data)
-        closeModal();
+        data.service = appointmentOn;
+        data.date = date;
+        data.created = new Date();
+
+        fetch('http://localhost:5000/addAppointment', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(success => {
+            if(success){
+                closeModal();
+                alert('Appointment created successfully');
+            }
+        })
+
     };
 
     return (
@@ -38,13 +53,13 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
                 </div>
                 <form className="form-style" onSubmit={handleSubmit(onSubmit)}>
                     <input type="text" name="name" className="form-control" placeholder="Enter your name" ref={register({ required: true })} />
-                    {errors.name && <span className="text-danger">This field is required</span>}
+                    {errors.name && <span className="text-warning">This field is required</span>}
                     <br />
                     <input type="number" name="phone" className="form-control" placeholder="Enter phone number" ref={register({ required: true })} />
-                    {errors.phone && <span className="text-danger">This field is required</span>}
+                    {errors.phone && <span className="text-warning">This field is required</span>}
                     <br />
                     <input type="email" name="email" className="form-control" placeholder="Enter your email" ref={register({ required: true })} />
-                    {errors.email && <span className="text-danger">This field is required</span>}
+                    {errors.email && <span className="text-warning">This field is required</span>}
                     <br />
                     <div className="row justify-content-between">
                         <div className="col col-md-4">
@@ -53,15 +68,15 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
                                 <option value="female">Female</option>
                                 <option value="other">Other</option>
                             </select>
-                            {errors.gender && <span className="text-danger">This field is required</span>}
+                            {errors.gender && <span className="text-warning">This field is required</span>}
                         </div>
                         <div className="col col-md-4">
                             <input type="number" name="age" className="form-control" placeholder="Age" ref={register({ required: true })} />
-                            {errors.age && <span className="text-danger">This field is required</span>}
+                            {errors.age && <span className="text-warning">This field is required</span>}
                         </div>
                         <div className="col col-md-4">
                             <input type="number" name="weight" className="form-control" placeholder="Weight" ref={register({ required: true })} />
-                            {errors.weight && <span className="text-danger">This field is required</span>}
+                            {errors.weight && <span className="text-warning">This field is required</span>}
                         </div>
                     </div>
                     <br />

@@ -3,13 +3,15 @@ import Calendar from 'react-calendar';
 import chair from '../../../images/chair.png';
 import 'react-calendar/dist/Calendar.css';
 
+
 const AppointmentHeader = ({handleDateChange}) => {
     
     return (
         <main className="row header-main-container align-items-center">
             <div className="col-md-4 offset-md-1">
-                <h1 className="heading-color">Appointment</h1>
+                <h1 className="heading-color mb-4">Appointment</h1>
                 <Calendar
+                    className="calendar"
                     onChange={handleDateChange}
                     value={new Date()}
                 />
