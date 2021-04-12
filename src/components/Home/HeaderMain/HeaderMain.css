@@ -1,0 +1,20 @@
+.header-main-container{
+    height: 600px;
+}
+.heading-color{
+    color: #3A4256;
+}
+.button-gradient {background-image: linear-gradient(to right, #1CD8D2 0%, #65aaeb  51%, #1CD8D2  100%)}
+.button-gradient {
+    border: none;
+    padding: 8px 15px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 5px;
+}
+.button-gradient:hover {
+    background-position: right center;
+    color: #fff;
+  }
+  
