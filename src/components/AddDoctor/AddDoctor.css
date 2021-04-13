@@ -1,0 +1,12 @@
+.style-doctor-form{
+    width: 80%;
+    margin-top: 50px;
+}
+
+@media (max-width: 575px){
+    .style-doctor-form{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
