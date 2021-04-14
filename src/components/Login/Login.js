@@ -30,12 +30,21 @@ const Login = () => {
                     email
                 }
                 setLoggedInUser(signInUser);
-                history.replace(from);
+                setVerifyToken();
             }).catch((error) => {
                 const errorMessage = error.message;
                 console.log(errorMessage);
 
             });
+    }
+
+    const setVerifyToken = () => {
+        firebase.auth().currentUser.getIdToken(true).then(function(idToken) {
+            sessionStorage.setItem('token', idToken);
+            history.replace(from);
+          }).catch(function(error) {
+            console.log(error);
+          });
     }
     return (
         <div className="d-flex justify-content-center align-items-center">

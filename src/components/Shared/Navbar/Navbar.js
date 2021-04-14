@@ -6,6 +6,7 @@ const Navbar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const handleSignOut = () => {
         setLoggedInUser({});
+        sessionStorage.removeItem('token');
     }
     return (
         <nav className="position-sticky top-0 navbar navbar-expand-lg navbar-light">

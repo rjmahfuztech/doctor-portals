@@ -11,6 +11,7 @@ const Sidebar = () => {
     const [isDoctor, setIsDoctor] = useState(false);
     const handleSignOut = () => {
         setLoggedInUser({});
+        sessionStorage.removeItem('token');
     }
 
     // if doctor
