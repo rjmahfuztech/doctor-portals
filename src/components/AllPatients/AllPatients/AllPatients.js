@@ -5,7 +5,7 @@ const AllPatients = () => {
     const [patientsData, setAllPatientsData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/patients')
+        fetch('https://vast-gorge-08839.herokuapp.com/patients')
             .then(res => res.json())
             .then(data => setAllPatientsData(data));
     }, []);

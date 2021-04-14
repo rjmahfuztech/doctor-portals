@@ -27,7 +27,7 @@ const Doctor = () => {
     const [doctor, setDoctor] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/doctors')
+        fetch('https://vast-gorge-08839.herokuapp.com/doctors')
         .then(res => res.json())
         .then(data => setDoctor(data));
     })
