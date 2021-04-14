@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import './Sidebar.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendar, faCog, faFileMedical, faHospitalUser, faSignOutAlt, faTh, faUserMd } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faCog, faFileMedical, faHome, faHospitalUser, faSignOutAlt, faTh, faUserMd } from '@fortawesome/free-solid-svg-icons'
 import { UserContext } from '../../../App';
 
 
@@ -26,6 +26,7 @@ const Sidebar = () => {
 
     return (
         <div style={{ height: "100vh" }} className="sidebar-container">
+            <h6><FontAwesomeIcon icon={faHome} /> <Link className="link" to="/home">Home</Link></h6>
             <h6><FontAwesomeIcon icon={faTh} /> <Link className="link" to="/dashboard">Dashboard</Link></h6>
             <h6><FontAwesomeIcon icon={faCalendar} /> <Link className="link" to="/appointment">Appointment</Link></h6>
             {
@@ -36,7 +37,9 @@ const Sidebar = () => {
                     <h6><FontAwesomeIcon icon={faCog} /> <Link className="link" to="/dashboard">Setting</Link></h6>
                 </div>
             }
-            <h6><FontAwesomeIcon className="text-info" icon={faSignOutAlt} /> <Link className="link" onClick={handleSignOut} to="/">SignOut</Link></h6>
+            <div className="signOut-position">
+                <h6><FontAwesomeIcon className="text-info" icon={faSignOutAlt} /> <Link className="link" onClick={handleSignOut} to="/">SignOut</Link></h6>
+            </div>
         </div>
     );
 };

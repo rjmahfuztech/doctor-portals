@@ -7,7 +7,7 @@ const Contact = () => {
         console.log('submit');
     }
     return (
-        <section className="text-center form-container pt-5 pb-5 mb-5">
+        <section id="contact" className="text-center form-container pt-5 pb-5 mb-5">
             <div>
                 <h5 className="h5-color">CONTACT US</h5>
                 <h2 className="text-white">Always Contact with us</h2>

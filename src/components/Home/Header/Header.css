@@ -17,3 +17,10 @@
     background-color: #3A4256;
     z-index: -1;
 }
+
+@media (max-width: 768px){
+    .header-container{
+        height: 900px;
+    }
+}
+

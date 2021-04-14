@@ -32,7 +32,7 @@ const blogData = [
 
 const Blog = () => {
     return (
-        <section className="d-flex justify-content-center mt-5">
+        <section id="blog" className="d-flex justify-content-center mt-5">
             <div className="w-75">
                 <div className="text-center">
                     <h5 className="h5-color">OUR BLOG</h5>

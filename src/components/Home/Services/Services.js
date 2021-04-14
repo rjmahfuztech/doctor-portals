@@ -22,7 +22,7 @@ const serviceData = [
 
 const Services = () => {
     return (
-        <section className="services-container mt-5">
+        <section id="service" className="mt-5">
             <div className="text-center">
                 <h5 className="h5-color">OUR SERVICES</h5>
                 <h2>Services We Provide</h2>
@@ -30,7 +30,7 @@ const Services = () => {
             <div className="d-flex justify-content-center mt-5">
                 <div className="row w-75 mt-4">
                     {
-                        serviceData.map(service => <ServiceDetail service={service}></ServiceDetail>)
+                        serviceData.map((service, index) => <ServiceDetail key={index} service={service}></ServiceDetail>)
                     }
                 </div>
             </div>

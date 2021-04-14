@@ -32,12 +32,12 @@ const Doctor = () => {
         .then(data => setDoctor(data));
     })
     return (
-        <section className="mt-5 mb-5 text-center">
+        <section id="doctor" className="mt-5 mb-5 text-center">
             <h5 className="h5-color">Our Doctor</h5>
             <div className="d-flex justify-content-center mt-4">
                 <div className="row w-75">
                     {
-                        doctor.map(doctor => <DoctorInfo key={doctor.id} doctor={doctor} ></DoctorInfo>)
+                        doctor.map(doctor => <DoctorInfo key={doctor._id} doctor={doctor} ></DoctorInfo>)
                     }
                 </div>
             </div>

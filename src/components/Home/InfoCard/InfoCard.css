@@ -4,6 +4,7 @@
 }
 .info-card{
     padding: 0 5px;
+    margin-bottom: 20px;
 }
 .info-primary{
     background-color: #1CC7C1;
@@ -16,4 +17,18 @@
 }
 .icon-align{
     margin-right: 10px;
+}
+
+@media (max-width: 480px){
+    .info-container{
+        height: 100px;
+        padding: 10px;
+    }
+    .info-card{
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+    .info-icon{
+        font-size: 2em;
+    }
 }

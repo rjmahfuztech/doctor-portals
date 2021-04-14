@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const InfoCard = ({ info }) => {
     const { title, description, icon, background } = info;
     return (
-        <div className="col-md-4 text-white info-card">
-            <div className={`d-flex justify-content-center info-container info-${background}`}>
+        <div className="col-md-4 col-12 text-white info-card">
+            <div className={`d-flex justify-content-center align-items-center info-container info-${background}`}>
                 <div className="icon-align">
                     <FontAwesomeIcon className="info-icon" icon={icon} />
                 </div>

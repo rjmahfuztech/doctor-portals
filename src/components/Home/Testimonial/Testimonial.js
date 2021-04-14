@@ -40,7 +40,7 @@ const Testimonial = () => {
                 <div className="d-flex justify-content-center">
                     <div className="row w-75">
                         {
-                            testimonialData.map(testimonial => <TestimonialInfo testimonial={testimonial}></TestimonialInfo>)
+                            testimonialData.map((testimonial, index) => <TestimonialInfo key={index} testimonial={testimonial}></TestimonialInfo>)
                         }
                     </div>
                 </div>

@@ -4,6 +4,7 @@
     #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     padding-top: 50px;
     padding-left: 10px;
+    position: relative;
 }
 .sidebar-container h6{
     padding: 20px 0;
@@ -18,4 +19,8 @@
 .sidebar-container h6 .link:hover{
     color: rgb(10, 4, 102);
     transition: 0.5s;
+}
+.sidebar-container .signOut-position{
+    position: absolute;
+    bottom: 5em;
 }
