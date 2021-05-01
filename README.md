@@ -12,6 +12,8 @@
 1. Authentication system with google.
 2. An authentication person can get service.
 3. Different Admin Panel and User Panel
+4. Admin can add new service and manage service.
+5. A admin also can make a new admin.
 
 
 ### Front-End Technology
