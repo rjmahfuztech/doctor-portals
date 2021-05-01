@@ -10,7 +10,7 @@
 ### Features
 
 1. Authentication system with google.
-2. An authentication person can geth service.
+2. An authentication person can get service.
 3. Different Admin Panel and User Panel
 
 
