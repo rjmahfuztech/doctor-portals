@@ -4,7 +4,7 @@
   <img width="100%" height="100%" src="src/images/doctor.JPG">
 </a>
 
-### [visit website](https://doctor-portals.netlify.app/) | [live API server](https://vast-gorge-08839.herokuapp.com/)
+   [visit website](https://doctor-portals.netlify.app/) | [live API server](https://vast-gorge-08839.herokuapp.com/)
 
 
 ### Features
@@ -30,4 +30,4 @@
 + Express.js
 + Heroku
 
-### [view back-end code](https://github.com/rjmahfuztech/doctor-portals-server)
+     [view back-end code](https://github.com/rjmahfuztech/doctor-portals-server)
