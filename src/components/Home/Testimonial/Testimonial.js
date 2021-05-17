@@ -27,12 +27,12 @@ const testimonialData = [
 const Testimonial = () => {
     return (
         <section className="testimonial-container">
-            <div className="align d-flex justify-content-around align-items-center">
-                <div className="">
+            <div className="align row justify-content-center align-items-center">
+                <div className="col-md-6 text-center">
                     <h5 className="h5-color">TESTIMONIAL</h5>
-                    <h2 className="heading-color">What's Our Patients <br /> Says</h2>
+                    <h2 className="heading-color">What's Our Patients Says</h2>
                 </div>
-                <div className="text-end">
+                <div className="col-md-6 text-center">
                     <img src={bgImg} className="w-50" alt=""/>
                 </div>
             </div>

@@ -9,7 +9,7 @@ const Appointment = () => {
                 <div className="col-md-5">
                     <img src={doctor} alt="Doctor" />
                 </div>
-                <div className="col-md-7 after">
+                <div className="col-md-7 ps-4 after">
                     <h5 className="h5-color">APPOINTMENT</h5>
                     <h2 className="mt-4">Make an appointment <br /> Today</h2>
                     <p className="mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, asperiores dignissimos dicta dolorum recusandae sint.</p>

@@ -18,6 +18,23 @@
     padding-right: 30px;
 }
 .appointment-style img{
-    height: 550px;
+    max-height: 550px;
     transform: translateY(-178px);
+}
+
+@media (max-width: 1200px){
+    .appointment-style img{
+        width: 100%;
+        transform: translateY(-4px);
+    }
+}
+@media (max-width: 768px){
+    .appointment-container{
+        height: 1000px;
+    }
+}
+@media (max-width: 480px){
+    .appointment-container{
+        height: 850px;
+    }
 }
